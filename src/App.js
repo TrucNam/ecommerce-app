@@ -1,6 +1,6 @@
 import React from 'react';
 import "./App.css";
-import { BrowserRouter, Routers, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -78,7 +78,7 @@ function App() {
 
       <div>
           <BrowserRouter>
-          <Routers>
+          <Routes>
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />}/>
               <Route path = "about" element={<About />} />
@@ -100,7 +100,7 @@ function App() {
               <Route path = "shipping-policy" element={<ShippingPolicy />} />
               <Route path = "term-conditions" element={<TermAndContions />} />
             </Route>
-          </Routers>
+          </Routes>
         </BrowserRouter>
       </div>
     </>

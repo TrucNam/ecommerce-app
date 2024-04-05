@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactStars from "react-rating-stars-component";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
@@ -15,7 +15,7 @@ const SingleProduct = () => {
         zoomWidth: 600,
         img: "https://m.media-amazon.com/images/I/61ZjlBOp+rL._AC_UF1000,1000_QL80_.jpg"
     };
-    const [orderedProduct, setorderedProduct] = useState(true);
+    const [orderedProduct, setorderedProduct ] = useState(0);
     const copyToClipboard = (text) => {
         console.log('text', text)
         var textField = document.createElement('textarea')
@@ -88,7 +88,7 @@ const SingleProduct = () => {
                                     />
                                     <p className="mb-0 t-review">() 2 Reviews)</p>
                                 </div>
-                                <a className="review-btn" href="">Write a Review</a>
+                                <a className="review-btn" href="/#">Write a Review</a>
                             </div>
                             <div className=" py-3">
                                 <div className="d-flex gap-10 align-items-center my-2">
@@ -146,12 +146,12 @@ const SingleProduct = () => {
                                 </div>
                                 <div className="d-flex align-items-center gap-15">
                                     <div>
-                                        <a href="">
+                                        <a href="/#">
                                             <TbGitCompare className="fs-5 me-2" /> Add to Compare
                                         </a>
                                     </div>
                                     <div>
-                                        <a href="">
+                                        <a href="/#">
                                             <AiOutlineHeart className="fs-5 me-2" /> Add to Wishlist
                                         </a>
                                     </div>

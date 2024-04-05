@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { BiArrowBack } from "react-icons/bi";
-import watch from "../images/watch.jpg";
+import watch from "../images/"
 import Container from "../components/Container";
 const Checkout = () => {
     return (
@@ -18,7 +18,7 @@ const Checkout = () => {
                             >
                                 <ol className="breadcrumb">
                                     <li className="breadcrumb-item">
-                                        <link className="tetx-dark total price" to="/cart">Cart</link>
+                                        <Link className="tetx-dark total price" to="/cart">Cart</Link>
                                     </li>
                                     &nbsp;/ &nbsp;
                                     <li className="breadcrumb-item total price active" aria-current="page">
@@ -105,7 +105,7 @@ const Checkout = () => {
                                             className="badge bg-secondary text-white rounded-circle p-2 position-absolute">
                                             1
                                         </span>
-                                        <img className="img-fluid" src="images/watch.jpg" alt="product" />
+                                        <img className="img-fluid" src={watch} alt="product" />
                                     </div>
                                     <div>
                                         <h5 className="total-price">dvsds</h5>
