@@ -6,7 +6,7 @@ import Container from "../components/Container";
 const Checkout = () => {
     return (
         <>
-            <Container class1="checkout-wrapper py-5 home-wrapper-2">
+            <Container className="checkout-wrapper py-5 home-wrapper-2">
 
                 <div className="row">
                     <div className="col-7">
@@ -105,7 +105,7 @@ const Checkout = () => {
                                             className="badge bg-secondary text-white rounded-circle p-2 position-absolute">
                                             1
                                         </span>
-                                        <img className="img-fluid" src={watch} alt="product" />
+                                        <img className="img-fluid" src="images/watch.jpg" alt="product" />
                                     </div>
                                     <div>
                                         <h5 className="total-price">dvsds</h5>

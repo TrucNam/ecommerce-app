@@ -1,5 +1,5 @@
 import React from 'react';
-import "/.App.css";
+import "./App.css";
 import { BrowserRouter, Routers, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
@@ -22,8 +22,8 @@ import Checkout from "./pages/Checkout";
 import Login from "./pages/Login";
 import Forgotpassword from "./pages/Forgotpassword";
 import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import { Counter } from './features/Counter';
+
 
 function App() {
   return (
